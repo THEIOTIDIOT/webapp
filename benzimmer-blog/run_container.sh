@@ -2,7 +2,7 @@
 sudo docker run --name webapp \
     --network zimnet \
     -d -p 8080:80 \
-    --restart=unless-stopped
+    --restart=unless-stopped \
     benzimmer-us:latest
 
 sudo docker cp $HOME/Git/webapp/benzimmer-blog/webapp.subdomain.conf swag:/config/nginx/proxy-confs
